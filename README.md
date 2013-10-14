@@ -1,7 +1,7 @@
 MongoAggregationBundle
 =======================
 
-Integration Mongo Pipeline Builder into you doctrine2 mongo-odm [Framework](http://docs.mongodb.org/manual/aggregation/)
+Integration [Mongo Pipeline Builder](https://github.com/f1nder/SolutionPipelineBuilder) into you Doctrine2 Mongo-ODM
 
 Library not yet ready.
 
@@ -19,6 +19,7 @@ Add to your AppKernel and install/update vendors
 
 ###Usage
 After install, bundle create mongo aggregation query manager for every DocumentManager
+
 Example:
 If you have default document manager
 ```
