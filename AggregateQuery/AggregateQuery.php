@@ -1,6 +1,6 @@
 <?php
 
-namespace Solution\MongoAggregationBundle\Query;
+namespace Solution\MongoAggregationBundle\AggregateQuery;
 
 use Doctrine\MongoDB\ArrayIterator;
 use Doctrine\MongoDB\Collection;

@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 class ContainerTest extends BaseCase
 {
-    const QUERY_BUILDER_CLASS = '\Solution\MongoAggregationBundle\Query\AggregationQueryBuilder';
+    const QUERY_BUILDER_CLASS = '\Solution\MongoAggregationBundle\AggregateQuery\AggregationQueryBuilder';
 
 
     public function testGenerateQueryBuilder()

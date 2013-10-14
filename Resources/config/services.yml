@@ -1,5 +1,5 @@
 parameters:
-  solution.mongo_aggregation_query.class: Solution\MongoAggregationBundle\Query\AggregationQueryBuilder
+  solution.mongo_aggregation_query.class: Solution\MongoAggregationBundle\AggregateQuery\AggregationQueryBuilder
 
 services:
   solution.mongo_aggregation_query:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Solution\MongoAggregationBundle\Query;
+namespace Solution\MongoAggregationBundle\AggregateQuery;
 
 use Doctrine\ODM\MongoDB\DocumentManager;
 

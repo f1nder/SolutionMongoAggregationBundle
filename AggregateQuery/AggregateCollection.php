@@ -1,10 +1,10 @@
 <?php
 
-namespace Solution\MongoAggregationBundle\Query;
+namespace Solution\MongoAggregationBundle\AggregateQuery;
 
 use Doctrine\MongoDB\Collection;
 use Solution\MongoAggregation\Configuration;
-use \Solution\MongoAggregationBundle\Query\AggregateQuery;
+use \Solution\MongoAggregationBundle\AggregateQuery\AggregateQuery;
 
 class AggregateCollection
 {

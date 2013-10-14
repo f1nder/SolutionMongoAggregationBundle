@@ -10,13 +10,13 @@ class AggregationQueryBuilderTest extends BaseCase
     public function testGetCollection()
     {
         $qB = $this->container->get('doctrine_mongodb.odm.dummy_aggregation_query')->getCollection('Document:Dummy');
-        $this->assertInstanceOf('\Solution\MongoAggregationBundle\Query\AggregateCollection', $qB);
+        $this->assertInstanceOf('\Solution\MongoAggregationBundle\AggregateQuery\AggregateCollection', $qB);
     }
 
     public function testCreateQueryInstance()
     {
         $qB = $this->container->get('doctrine_mongodb.odm.dummy_aggregation_query')->getCollection('Document:Dummy')->createAggregateQuery();
-        $this->assertInstanceOf('\Solution\MongoAggregationBundle\Query\AggregateQuery', $qB);
+        $this->assertInstanceOf('\Solution\MongoAggregationBundle\AggregateQuery\AggregateQuery', $qB);
     }
 
 
