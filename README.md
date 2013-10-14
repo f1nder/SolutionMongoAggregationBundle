@@ -33,12 +33,12 @@ etc
 
 ####Example create aggregation query
 ``` php
-  $expr = new \Solution\MongoAggregation\Pipeline\Operators\Expr;
-  $aq = $this->get('doctrine_mongodb.odm.default_aggregation_query')
-              ->getCollection('AdmPlayerBundle:Comments')->createAggregateQuery()
-              ->group(['_id' => ['year' => $expr->year('$dateRegistration'), 'month' => $expr->month('$dateRegistration')], 'count' => $expr->sum(1)])
-              ->sort(['count' => -1])
-              ->limit(50);
+$expr = new \Solution\MongoAggregation\Pipeline\Operators\Expr;
+$aq = $this->get('doctrine_mongodb.odm.default_aggregation_query')
+        ->getCollection('AdmPlayerBundle:Comments')->createAggregateQuery()
+        ->group(['_id' => ['month' => $expr->month('$dateRegistration')], 'count' => $expr->sum(1)])
+        ->sort(['count' => -1])
+        ->limit(50);
 ```
 
 
