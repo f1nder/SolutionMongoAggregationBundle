@@ -1,0 +1,26 @@
+{
+    "name": "solution/mongo-odm-aggregation-bundle",
+    "description": "This Bundle integrates mongo aggregation queries into you Symfony2 project.",
+    "keywords": ["mongo", "aggregation", "query", "pipeline"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Moroz",
+            "homepage": "http://comingsoon.com",
+            "email": "netstroix@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/symfony": "~2.3",
+        "doctrine/mongodb-odm-bundle": "~3.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Solution\\MongoAggregationBundle": ""
+        }
+    },
+    "target-dir": "Solution/MongoAggregationBundle"
+}

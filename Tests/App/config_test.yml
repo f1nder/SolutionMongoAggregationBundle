@@ -1,0 +1,60 @@
+framework:
+    test: ~
+    translator:      { fallback: en }
+    secret:          dfd
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: %kernel.debug%
+    form:            true
+    csrf_protection: true
+    validation:      { enable_annotations: true }
+    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    default_locale:  en
+ #   trust_proxy_headers: false # Whether or not the Request object should trust proxy headers (X_FORWARDED_FOR/HTTP_CLIENT_IP)
+    session:         ~
+# Twig Configuration
+twig:
+    form:
+        resources:
+            - 'SolutionCodeMirrorBundle:Form:code_mirror_widget.html.twig'
+
+# Assetic Configuration
+assetic:
+    debug: true
+    use_controller: false
+    bundles: ~
+    #java: /usr/bin/java
+    write_to: %kernel.root_dir%/web
+    filters:
+        cssrewrite: ~
+
+#solution_mongo_aggreagtion_query:
+#    parameters:
+#      mode: text/html
+#      lineNumbers: true
+#      lineWrapping: true
+#    mode_dirs:
+#     - @SolutionCodeMirrorBundle/Tests/App/dummy_js
+#    themes_dirs:
+#     - @SolutionCodeMirrorBundle/Tests/App/dummy_js
+
+
+doctrine_mongodb:
+  connections:
+    default:
+        server: mongodb://localhost:27017
+        options: {}
+  default_database: aggregation_query
+  document_managers:
+    default:
+        auto_mapping: true
+    dummy:
+        connection: default
+        mappings:
+          dummy:
+              mapping:    true
+              type:       annotation
+              dir:        %kernel.root_dir%/src/Document
+              prefix:     Document
+              alias:      Document
+              is_bundle:  false
