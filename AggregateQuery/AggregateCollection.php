@@ -4,9 +4,12 @@ namespace Solution\MongoAggregationBundle\AggregateQuery;
 
 use Doctrine\MongoDB\Collection;
 use Solution\MongoAggregation\Configuration;
+use Solution\MongoAggregation\Pipeline\Stage;
 
 class AggregateCollection
 {
+    const DEFAULT_STAGE = 'first.stage';
+
     /** @var  Collection */
     private $collection;
 
@@ -16,12 +19,15 @@ class AggregateCollection
     }
 
     /**
-     * @return AggregateQuery
+     * @param null $stage
+     * @return Stage
      */
-    public function createAggregateQuery()
+    public function createAggregateQuery($stage = null)
     {
         $qbConf = new Configuration();
+        $query = new AggregateQuery($this->collection, $qbConf);
+        $stage = is_string($stage) ? $stage : self::DEFAULT_STAGE;
 
-        return new AggregateQuery($this->collection, $qbConf);
+        return $query->addStage($stage);
     }
 }
