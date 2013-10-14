@@ -13,3 +13,4 @@ before_script:
   - php composer.phar require symfony/symfony:${SYMFONY_VERSION}
 
 script: phpunit
+
