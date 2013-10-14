@@ -18,7 +18,7 @@ Add to your AppKernel and install/update vendors
 ```
 
 ###Usage
-After install bundle create mongo aggregation query manager for every DocumentManager
+After install, bundle create mongo aggregation query manager for every DocumentManager
 Example:
 If you have default document manager
 ```
