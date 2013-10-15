@@ -13,6 +13,7 @@ class AppKernel extends Kernel
 
         $bundles = array(
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new \Symfony\Bundle\TwigBundle\TwigBundle(),
             new \Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
             new \Solution\MongoAggregationBundle\SolutionMongoAggregationBundle(),
         );

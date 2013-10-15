@@ -12,6 +12,14 @@ framework:
     default_locale:  en
  #   trust_proxy_headers: false # Whether or not the Request object should trust proxy headers (X_FORWARDED_FOR/HTTP_CLIENT_IP)
     session:         ~
+# Twig Configuration
+twig:
+    form:
+        resources:
+            - 'SolutionCodeMirrorBundle:Form:code_mirror_widget.html.twig'
+
+
+
 
 
 doctrine_mongodb:
