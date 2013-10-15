@@ -16,7 +16,7 @@ class AggregationQueryBuilderTest extends BaseCase
     public function testCreateQueryInstance()
     {
         $qB = $this->container->get('doctrine_mongodb.odm.dummy_aggregation_query')->getCollection('Document:Dummy')->createAggregateQuery();
-        $this->assertInstanceOf('\Solution\MongoAggregationBundle\AggregateQuery\AggregateQuery', $qB);
+        $this->assertInstanceOf('\Solution\MongoAggregation\Pipeline\Stage', $qB);
     }
 
 
@@ -25,8 +25,7 @@ class AggregationQueryBuilderTest extends BaseCase
         /** @var AggregateQuery $qB */
         $qB = $this->container->get('doctrine_mongodb.odm.dummy_aggregation_query')->getCollection('Document:Dummy')->createAggregateQuery();
 
-        $result = $qB->addStage('first')
-            ->match(['testProperty' => 1])
+        $result = $qB->match(['testProperty' => 1])
             ->getQuery()->aggregate();
 
         $this->assertInstanceOf('\Doctrine\MongoDB\ArrayIterator', $result);
