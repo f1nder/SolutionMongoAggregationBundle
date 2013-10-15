@@ -12,31 +12,6 @@ framework:
     default_locale:  en
  #   trust_proxy_headers: false # Whether or not the Request object should trust proxy headers (X_FORWARDED_FOR/HTTP_CLIENT_IP)
     session:         ~
-# Twig Configuration
-twig:
-    form:
-        resources:
-            - 'SolutionCodeMirrorBundle:Form:code_mirror_widget.html.twig'
-
-# Assetic Configuration
-assetic:
-    debug: true
-    use_controller: false
-    bundles: ~
-    #java: /usr/bin/java
-    write_to: %kernel.root_dir%/web
-    filters:
-        cssrewrite: ~
-
-#solution_mongo_aggreagtion_query:
-#    parameters:
-#      mode: text/html
-#      lineNumbers: true
-#      lineWrapping: true
-#    mode_dirs:
-#     - @SolutionCodeMirrorBundle/Tests/App/dummy_js
-#    themes_dirs:
-#     - @SolutionCodeMirrorBundle/Tests/App/dummy_js
 
 
 doctrine_mongodb:
