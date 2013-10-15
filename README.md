@@ -1,4 +1,4 @@
-MongoAggregationBundle
+MongoAggregationBundle [![Build Status](https://travis-ci.org/f1nder/SolutionMongoAggregationBundle.png?branch=master)](https://travis-ci.org/f1nder/SolutionMongoAggregationBundle)
 =======================
 
 Integration [Mongo Pipeline Builder](https://github.com/f1nder/SolutionPipelineBuilder) into you Doctrine2 Mongo-ODM
