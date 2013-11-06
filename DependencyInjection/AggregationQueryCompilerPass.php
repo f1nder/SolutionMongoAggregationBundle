@@ -4,7 +4,6 @@
  *
  * Long description file (if need)...
  *
- * @package ${VENDOR}\\${BUNDLE}\\$PACKAGE
  * @author  a.moroz
  * @date    11.10.13 14:57
  */

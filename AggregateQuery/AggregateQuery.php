@@ -9,7 +9,6 @@ use Solution\MongoAggregation\Pipeline\Query as BaseQuery;
 
 class AggregateQuery extends BaseQuery
 {
-
     /** @var  Collection */
     private $collection;
 
@@ -46,5 +45,4 @@ class AggregateQuery extends BaseQuery
 
         return new ArrayIterator(isset($result['result']) ? $result['result'] : array());
     }
-
 }
