@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "symfony/symfony": "~2.1",
+        "symfony/symfony": "~2.3",
         "solution/pipeline-builder": "dev-master",
         "doctrine/mongodb-odm-bundle": "~3.0"
     },
