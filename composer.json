@@ -16,7 +16,7 @@
         "solution/pipeline-builder": "~0.1",
         "doctrine/mongodb-odm-bundle": "~3.0"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
             "Solution\\MongoAggregationBundle": ""
