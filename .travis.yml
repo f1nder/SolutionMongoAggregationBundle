@@ -6,7 +6,8 @@ php:
 
 env:
   - SYMFONY_VERSION="2.3.*"
-
+  - SYMFONY_VERSION="2.8.*"
+  
 before_script:
   - pecl -q install -f mongo-1.3.4
   - curl -s http://getcomposer.org/installer |php --
