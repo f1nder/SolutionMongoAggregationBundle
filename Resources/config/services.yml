@@ -3,6 +3,6 @@ parameters:
 
 services:
   solution.mongo_aggregation_query:
-    class: %solution.mongo_aggregation_query.class%
+    class: '%solution.mongo_aggregation_query.class%'
     arguments:
       - '@doctrine_mongodb.odm.document_manager'
